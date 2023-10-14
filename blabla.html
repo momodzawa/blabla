@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Курс JavaScript</title>
+	<script>
+		//var surname = 'Иванова';
+		//var name = 'Света'
+		//var ocupation = 'учитель'; 
+		//var age = '27';
+		//var discipline = 'литература';
+
+		//let teacher = ['Иванова','Света', 'учитель', 27, 'литература']
+
+		let teacher = {
+			surname: "Иванова",
+			name: "Света",
+			ocupation: ["учитель",  "соц.педагог"],
+			age: 27,
+			discipline: ["литература","русский язык", "география"]
+		};
+
+	</script>
+</head>
+
+<body>
+	
+	<header>
+		<h1 style="text-align: center;">Введение в JavaScript</h1>
+	</header>	
+	
+	<div class="content" style="display: flex; flex-direction: column; align-items: center; font-size: 20px;" >
+		<script>
+		//alert(document.write("Фамилия: " + teacher[0] + '<br>'));
+		//alert(document.write("Имя: " + teacher[1] + '<br>'));
+		//alert(document.write("Должность: " + teacher[2] + '<br>'));
+		//alert(document.write("Возраст: " + teacher[3] + '<br>'));
+		//alert(document.write("Дисциплина: " + teacher[4] + '<br>'));
+
+
+		//alert(document.write("Фамилия: " + teacher.surname + '<br>'));
+		//alert(document.write("Имя: " + teacher.name + '<br>'));
+		//alert(document.write("Должность: " + teacher.ocupation + '<br>'));
+		//alert(document.write("Возраст: " + teacher.age + '<br>'));
+		//alert(document.write("Дисциплина: " + teacher.discipline + '<br>'));
+
+		//let line = 
+		//`<h2> ${teacher.surname} ${teacher.name}</h2><br><p>Должность: ${teacher.ocupation} <br>Возраст: ${teacher.age} <br>Дисциплина: ${teacher.discipline} <br></p>`;
+		//alert(document.write(line));
+
+		let line = 
+		`<h2> ${teacher.surname} ${teacher.name}</h2><br><p><i>Должность:</i>${teacher.ocupation} <br><br><i>Возраст:</i> ${teacher.age} <br><br><i>Дисциплина:</i> <ul><li>${teacher.discipline[0]}</li><li>${teacher.discipline[1]}</li><li>${teacher.discipline[2]}</li></ul> <br><br> <i>Примечание:</i></p>`;
+		alert(document.write(line));
+		</script>
+	</div>
+	
+	<footer style="text-align: center;">
+		<h3>Добро пожаловать на pechora_PROger</h3>
+		<a href="https://vk.com/pechora_proger" target="__blank">pechora_PROger</a>
+	</footer>
+
+</body>
+</html>
